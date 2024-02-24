@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'main'
 
+[markup.goldmark.renderer]
+unsafe= true
+
 DefaultContentLanguage = "en"
 [languages]
   [languages.en]
