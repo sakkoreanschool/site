@@ -1,6 +1,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
+<meta name="color-scheme" content="light dark" />
 <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+/>
 {{ partialCached "head/css.html" . }}
 {{ partialCached "head/js.html" . }}

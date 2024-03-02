@@ -1,0 +1,25 @@
+<form>
+  <fieldset>
+    <label>
+      {{ T "english_name" }}
+      <input
+        name="name_en"
+        placeholder="{{ T "english_name" }}"
+        autocomplete="english-name"
+      />
+    </label>
+    <label>
+      {{ T "email" }}
+      <input
+        type="email"
+        name="email"
+        placeholder="{{ T "email" }}"
+        autocomplete="email"
+      />
+    </label>
+  </fieldset>
+  <input
+    type="submit"
+    value="{{ T "register" }}"
+  />
+</form>

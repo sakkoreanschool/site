@@ -1,7 +1,12 @@
 {{ define "main" }}
   {{ .Content }}
-  {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
-  {{ end }}
+    <div class="splash">
+      <div class="hero">
+          <img src="{{ "/hero.jpg" }}" alt="Hero Image">
+      </div>
+      <div class="content">
+          <h1>{{ site.Title }}</h1>
+          <p>This is some content about the website. You can add any text or other elements here.</p>
+      </div>
+    </div>
 {{ end }}

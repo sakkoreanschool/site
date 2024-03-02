@@ -1,28 +1,54 @@
 baseURL = 'https://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
 theme = 'main'
+DefaultContentLanguage = "en"
 
 [markup.goldmark.renderer]
-unsafe= true
+  unsafe= true
 
-DefaultContentLanguage = "en"
 [languages]
   [languages.en]
     disabled = false
     languageCode = 'en-US'
     languageDirection = 'ltr'
     languageName = 'English'
-    title = 'Personal Site'
+    title = 'St. Andrew Kim Korean School'
     weight = 2
     [languages.en.params]
       subtitle = 'test'
+    [languages.en.menus]
+    [[languages.en.menus.main]]
+      name = 'About'
+      pageRef = '/about'
+      weight = 10
+    [[languages.en.menus.main]]
+      name = 'Curriculum'
+      pageRef = '/curriculum'
+      weight = 20
+    [[languages.en.menus.main]]
+      name = 'Register'
+      pageRef = '/'
+      weight = 999
+
   [languages.ko]
     disabled = false
     languageCode = 'ko-KR'
     languageDirection = 'ltr'
     languageName = '한국어'
-    title = '개인 사이트'
+    title = '성김대건 한국학교'
     weight = 1
-    [languages.de.params]
+    [languages.ko.params]
       subtitle = '테스트'
+    [languages.ko.menus]
+    [[languages.ko.menus.main]]
+      name = '학교소개'
+      pageRef = '/about'
+      weight = 10
+    [[languages.ko.menus.main]]
+      name = '교과과정'
+      pageRef = '/curriculum'
+      weight = 20
+    [[languages.ko.menus.main]]
+      name = '등록'
+      pageRef = '/'
+      weight = 999
