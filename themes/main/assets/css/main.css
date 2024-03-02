@@ -16,9 +16,62 @@ nav label {
   display: none;
 }
 
+.menu-expanded {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-expanded li {
+    position: relative;
+}
+
+.menu-expanded .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f8f9fa; /* Background color for dropdown */
+    border: 1px solid #ccc; /* Border color for dropdown */
+    margin-left: 1rem;
+}
+
+.menu-expanded li:hover .submenu {
+    display: block;
+}
+
+.menu-expanded li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-expanded li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-expanded li a:hover {
+    background-color: #e9ecef; /* Background color for hovered link */
+}
+
+
+.menu-compact {
+  display: none;
+}
+
 @media (max-width: 576px) {
+.menu-compact {
+  display: block;
+}
 /* Here is the magic: if the checkbox is not marked, the adjacent list is not displayed */
 input[type="checkbox"]:not(:checked) + ul {
+  display: none;
+}
+
+
+.menu-expanded {
   display: none;
 }
 

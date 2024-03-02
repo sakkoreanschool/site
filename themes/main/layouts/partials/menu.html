@@ -24,12 +24,13 @@
       <!-- The hamburger menu -->
       <label for="menu" tabindex="0"> ☰ </label>
       <input id="menu" type="checkbox" />
-    <ul>
+
+    <ul class="menu-compact">
         {{ $disallowedInMenu := slice "news" }}
         {{ range .Site.Sections }}
             {{ if not (in $disallowedInMenu .Type) }}
                 <li>
-                    <details class="dropdown">
+                    <details>
                         <summary>
                             {{ .Title }}
                         </summary>
@@ -39,6 +40,21 @@
                             {{ end }}
                         </ul>
                     </details>
+                </li>
+            {{ end }}
+        {{ end }}
+    </ul>
+    <ul class="menu-expanded">
+        {{ $disallowedInMenu := slice "news" }}
+        {{ range .Site.Sections }}
+            {{ if not (in $disallowedInMenu .Type) }}
+                <li>
+                    <button>{{ .Title }}</button>
+                    <ul class="submenu">
+                        {{ range .Pages }}
+                            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                        {{ end }}
+                    </ul>
                 </li>
             {{ end }}
         {{ end }}
