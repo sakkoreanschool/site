@@ -6,7 +6,22 @@
       </div>
       <div class="content">
           <h1>{{ site.Title }}</h1>
-          <p>This is some content about the website. You can add any text or other elements here.</p>
+          <p>{{ T "tagline" }}</p>
+
+          <div class="news">
+            <h4>{{ T "news_header" }}</h4>
+            <ul>
+            {{ range first 10 (where .Site.Pages "Section" "news") }}
+               {{ range .Pages }}
+                  <li>
+                    <h5><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+                    {{ .Date | time.Format ":date_long" }}
+                    <p>{{ .Summary }}</p>
+                  </li>
+               {{ end }}
+            {{ end }}
+            </ul>
+          </div>
       </div>
     </div>
 {{ end }}

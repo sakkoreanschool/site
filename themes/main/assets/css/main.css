@@ -134,3 +134,22 @@ hero img {
   grid-column: 1 / span 1; /* Align the content section to the left */
   grid-row: 1 / span 1; /* Ensure content occupies one row */
 }
+
+.content .news {
+  margin: auto;
+  max-width: 500px;
+  background-color: #676F54;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.content .news ul {
+  padding: 0.5rem;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+.content .news li {
+  list-style: none;
+  border-bottom: 1px solid gray;
+}
