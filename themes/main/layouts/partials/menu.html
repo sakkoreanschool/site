@@ -26,6 +26,7 @@
       <input id="menu" type="checkbox" />
 
     <ul class="menu-compact">
+        <a role="button" href="{{ .Site.BaseURL | relLangURL }}">{{ T "home" }}</a>
         {{ $disallowedInMenu := slice "news" }}
         {{ range .Site.Sections }}
             {{ if not (in $disallowedInMenu .Type) }}
@@ -45,6 +46,7 @@
         {{ end }}
     </ul>
     <ul class="menu-expanded">
+        <li><a role="button" href="{{ .Site.BaseURL | relLangURL }}">{{ T "home" }}</a></li>
         {{ $disallowedInMenu := slice "news" }}
         {{ range .Site.Sections }}
             {{ if not (in $disallowedInMenu .Type) }}
