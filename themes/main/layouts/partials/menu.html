@@ -48,13 +48,20 @@
     <ul class="menu-expanded">
         <li><a role="button" href="{{ .Site.BaseURL | relLangURL }}">{{ T "home" }}</a></li>
         {{ $disallowedInMenu := slice "news" }}
+        {{ $site := .Site }}
         {{ range .Site.Sections }}
             {{ if not (in $disallowedInMenu .Type) }}
                 <li>
                     <button>{{ .Title }}</button>
                     <ul class="submenu">
                         {{ range .Pages }}
-                            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                            {{ with .Params.sectiontypelink }}
+                                {{ with $site.GetPage . }}
+                                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                {{ end }}
+                            {{ else}}
+                                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                            {{ end }}
                         {{ end }}
                     </ul>
                 </li>
