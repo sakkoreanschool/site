@@ -5,3 +5,5 @@ description: 학급안내
 ---
 
 한국어 학급안내 페이지
+
+{{% class_description class_name="기초반" description="기초반입니다" %}}
