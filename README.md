@@ -1,5 +1,12 @@
 # Website
-This is the static web site for St. Andrew Kim Korean School.
+This is a prototype for the static web site for St. Andrew Kim Korean School.
+The goal is to create a static website that can be easily updated by nontechnical users.
+
+It uses the following technologies:
+* [Hugo](https://gohugo.io/) (static site generator)
+* [Decap] (https://decapcms.org/) (headless content management system)
+* [Pico css](https://picocss.com/) (Barebones css framework)
+* [Netlify](https://www.netlify.com/) (deployment)
 
 ## Development Tooling
 You will need [go](https://go.dev/) and [hugo](https://gohugo.io/) installed on your system.
@@ -55,10 +62,10 @@ description: 학급안내
 
 ```
 
-Now you can write content in Markdown in the language for the file.
+Now you can write content in Markdown in the language for the file. It is not required that every page have a translation.
 
 ### Theme Element Translation
-Some elements are more complex.  They are mostly in `/themes/main/layouts`.  For these items we don't keep two copies of the file. Instead, there are language files in `/themes/i18n`.
+For items not in the `content` folder, translation works more traditionally.  Such pages are mostly in `/themes/main/layouts`.  For these items we don't keep two copies of the file. Instead, there are language files in `/themes/i18n`. You register a key and the corresponding translation that is bound to that key:
 
 In `en.toml` for example we have:
 ```toml
@@ -82,4 +89,4 @@ Then the translations can be used in templates like this:
 
 
 ## Deployment
-TBD
+Currently any merge to `main` will cause the site to deploy via netlify.
