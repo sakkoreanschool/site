@@ -5,7 +5,7 @@ media_folder: static/img
 public_folder: /img
 collections:
   - name: 'news'
-    label: 'News'
+    label: '공지사항'
     i18n: true
     folder: 'content/news'
     create: true
@@ -19,7 +19,7 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
 
   - name: 'about'
-    label: 'About'
+    label: '학교소개'
     i18n: true
     folder: 'content/about'
     create: true
@@ -31,7 +31,52 @@ collections:
       - { label: 'Publish Date', name: 'date', widget: 'datetime', i18n: true }
       - { label: 'Description', name: 'description', widget: 'string', i18n: true }
       - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
-      - { label: 'weight', name: 'weight', widget: 'string' }
+      - { label: 'weight', name: 'weight', widget: 'string', i18n: true }
+
+  - name: 'contact'
+    label: '문의하기'
+    i18n: true
+    folder: 'content/contact'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', i18n: true }
+      - { label: 'Description', name: 'description', widget: 'string', i18n: true }
+      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+      - { label: 'weight', name: 'weight', widget: 'string', i18n: true }
+
+  - name: 'curriculum'
+    label: '교과과정'
+    i18n: true
+    folder: 'content/curriculum'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', i18n: true }
+      - { label: 'Description', name: 'description', widget: 'string', i18n: true }
+      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+      - { label: 'weight', name: 'weight', widget: 'string', i18n: true }
+
+  - name: 'involvment'
+    label: '등록 및 참여'
+    i18n: true
+    folder: 'content/involvment'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string', i18n: true }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime', i18n: true }
+      - { label: 'Description', name: 'description', widget: 'string', i18n: true }
+      - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
+      - { label: 'weight', name: 'weight', widget: 'string', i18n: true }
 i18n:
   # Required and can be one of multiple_folders, multiple_files or single_file
   # multiple_folders - persists files in `<folder>/<locale>/<slug>.<extension>`
