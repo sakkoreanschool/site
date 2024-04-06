@@ -90,3 +90,18 @@ Then the translations can be used in templates like this:
 
 ## Deployment
 Currently any merge to `main` will cause the site to deploy via netlify.
+
+The configuration for the CMS is located at `/static/admin`.
+
+
+## Content Management System (CMS)
+[Decap] (https://decapcms.org/) is used as a content management system to allow non technical users to modify site content.
+
+### Log In and User Managment
+The admin site can be accessed at `/admin` and requires login.  Login is handled via OAUTH provided by netlify.  To manage who is allowed to access the CMS, follow [this guide](https://docs.netlify.com/security/secure-access-to-sites/identity/registration-login/#invitations).
+
+### Configuration
+The configuration file for the CMS is located at `/static/admin/config.yml`. A full summary of all configuration options can be seen [here](https://decapcms.org/docs/configuration-options/).
+
+#### Advanced Configuration
+The admin site is fully customizable using React.
