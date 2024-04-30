@@ -1,11 +1,52 @@
+:root {
+  /* Light Mode Colors */
+  --primary-color-light: #FFFF; /* Default primary color in light mode */
+  --secondary-color-light: #FFFF; /* Default secondary color in light mode */
+  --accent-color-light: #E49273; /* Default accent color in light mode */
+
+  /* Dark Mode Colors */
+  --primary-color-dark: #246A73; /* Default primary color in dark mode */
+  --secondary-color-dark: #160F29; /* Default secondary color in dark mode */
+  --accent-color-dark: #F3DFC1; /* Default accent color in dark mode */
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--primary-color-light); /* Default background color */
+  color: black; /* Default text color */
+}
+
 header {
   border-bottom: 1px solid #222;
   margin-bottom: 1rem;
+  background-color: var(--secondary-color-light); /* Use light mode primary color for header background */
+  color: #fff; /* Text color on header */
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+header button {
+  color: black;
+}
+
+.languageToggle {
+  white-space: nowrap;
 }
 
 footer {
   border-top: 1px solid #222;
   margin-top: 1rem;
+}
+
+/* Dark Mode Media Query */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Update colors for dark mode */
+    --primary-color: var(--primary-color-dark);
+    --secondary-color: var(--secondary-color-dark);
+    --accent-color: var(--accent-color-dark);
+  }
 }
 
 
@@ -28,11 +69,13 @@ nav label {
 .menu-expanded .submenu {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 75%;
     left: 0;
-    background-color: #f8f9fa; /* Background color for dropdown */
-    border: 1px solid #ccc; /* Border color for dropdown */
+    background-color: white; /* Background color for dropdown */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--accent-color-light);
     margin-left: 1rem;
+    width: 175px;
 }
 
 .menu-expanded li:hover .submenu {
@@ -44,16 +87,28 @@ nav label {
     border: none;
     cursor: pointer;
 }
-
-.menu-expanded li a {
-    display: block;
-    padding: 5px 10px;
+.menu-expanded a {
+    margin: 1px;
     text-decoration: none;
-    color: black;
+    font-size: 0.8rem;
 }
 
-.menu-expanded li a:hover {
-    background-color: #e9ecef; /* Background color for hovered link */
+.menu-expanded li a {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.menu-expanded a li {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    width: 150px;
+}
+
+.menu-expanded a:hover li {
+  display: block;
+  background-color: #e9ecef; /* Background color for hovered link */
 }
 
 
@@ -61,12 +116,21 @@ nav label {
   display: none;
 }
 
-@media (max-width: 576px) {
+/* styles for the small screen mode menu*/
+@media (max-width: 700px) {
   .menu-compact {
     display: block;
+    position: absolute;
+    top: 100px;
+    background-color: #FFFF;
   }
+
+  .languageToggle {
+
+  }
+
   /* Here is the magic: if the checkbox is not marked, the adjacent list is not displayed */
-  input[type="checkbox"]:not(:checked) + ul {
+  #menu:not(:checked) + .menu-compact {
     display: none;
   }
 
@@ -121,6 +185,11 @@ nav label {
 
   details li a {
     font-size: 1rem;
+    width: 100%;
+  }
+
+  details li a:hover {
+    background-color: #e9ecef; /* Background color for hovered link */
   }
 }
 

@@ -50,10 +50,8 @@
                 </li>
             {{ end }}
         {{ end }}
-        <a class="home-link" href="{{ .Site.BaseURL | relLangURL }}">{{ T "home" }}</a>
     </ul>
     <ul class="menu-expanded">
-        <li><a role="button" href="{{ .Site.BaseURL | relLangURL }}">{{ T "home" }}</a></li>
         {{ $disallowedInMenu := slice "news" }}
         {{ $site := .Site }}
         {{ range .Site.Sections }}
@@ -64,10 +62,10 @@
                         {{ range .Pages }}
                             {{ with .Params.sectiontypelink }}
                                 {{ with $site.GetPage . }}
-                                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                    <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
                                 {{ end }}
                             {{ else}}
-                                <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+                                <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
                             {{ end }}
                         {{ end }}
                     </ul>
@@ -75,7 +73,7 @@
             {{ end }}
         {{ end }}
     </ul>
-    <ul>
+    <ul class="languageToggle">
         <li>
             {{ $siteLanguages := site.Languages}}
             {{ $pageLang := .Page.Lang}}
@@ -84,7 +82,7 @@
                 {{- range sort $siteLanguages "Weight" "asc" }}
                     {{- if eq $translation.Lang .Lang }}
                       {{ if ne $pageLang .Lang}}
-                        <a href="{{ $translation.Permalink | relURL }}" role="button">{{ .LanguageConfig.LanguageName }}</a>
+                        <a href="{{ $translation.Permalink | relURL }}">{{ .LanguageConfig.LanguageName }}</a>
                       {{ end }}
                     {{- end }}
                 {{ end }}
