@@ -35,7 +35,7 @@ DefaultContentLanguage = "en"
     languageCode = 'ko-KR'
     languageDirection = 'ltr'
     languageName = '한국어'
-    title = '성김대건 한국학교'
+    title = '시애틀 성 김대건 한국학교'
     weight = 1
     [languages.ko.params]
       subtitle = '테스트'

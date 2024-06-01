@@ -1,7 +1,7 @@
 :root {
   /* Light Mode Colors */
-  --primary-color-light: #FFFF; /* Default primary color in light mode */
-  --secondary-color-light: #FFFF; /* Default secondary color in light mode */
+  --primary-color-light: #060125; /* Default primary color in light mode */
+  --secondary-color-light: #F0CA55; /* Default secondary color in light mode */
   --accent-color-light: #E49273; /* Default accent color in light mode */
 
   /* Dark Mode Colors */
@@ -136,6 +136,10 @@ nav label {
 
   .menu-expanded {
     display: none;
+  }
+
+  #page-title {
+    color: pink;
   }
 
   nav {
