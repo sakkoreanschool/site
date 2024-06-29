@@ -35,8 +35,8 @@ hugo server -D --disableFastRender
 ```
 In another terminal
 ```
-cd static
-npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+cd themes/main/static
+npx tailwindcss -i ./src/input.css -o ../assets/css/output.css --watch
 ```
 
 Changes to the pages will be automatically compiled and live reloaded.
