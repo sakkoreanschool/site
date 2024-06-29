@@ -1,84 +1,59 @@
-<nav>
-    <ul>
-        <li>
-          <h1>
-              <a id="page-title" href="{{ .Site.BaseURL | relLangURL }}">
-                  {{ site.Title }}
-              </a>
-          </h1>
-        </li>
-    </ul>
-    <ul class="languageToggle">
-        <li>
-            {{ $siteLanguages := site.Languages}}
-            {{ $pageLang := .Page.Lang}}
-            {{- range .Page.AllTranslations }}
-                {{ $translation := . }}
-                {{- range sort $siteLanguages "Weight" "asc" }}
-                    {{- if eq $translation.Lang .Lang }}
-                      {{ if ne $pageLang .Lang}}
-                        <a href="{{ $translation.Permalink | relURL }}">{{ .LanguageConfig.LanguageName }}</a>
-                      {{ end }}
-                    {{- end }}
-                {{ end }}
-            {{- end }}
-        </li>
-    </ul>
+  <nav class="h-screen w-screen bg-primary-dark-blue text-primary-yellow shadow-lg z-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16">
+        <div class="flex justify-between">
+          <div class="shrink-0 flex items-center">
+            <a href="#" class="text-2xl font-bold">시애틀 성 김대건 한국학교</a>
+          </div>
+          <div class="hidden sm:flex sm:space-x-8 mx-auto">
+            <a href="#" class="text-primary-yellow inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300">
+              Home
+            </a>
+            <div class="relative group flex items-center justify-center h-full">
+              <button class="text-primary-yellow inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300">
+                Services
+              </button>
+              <div class="absolute hidden group-hover:block shadow-lg mt-1 rounded-md z-40 bg-primary-dark-blue px-2">
+                <a href="#" class="block px-4 py-2 border-b-2 border-transparent hover:border-gray-300">Web Development</a>
+                <a href="#" class="block px-4 py-2 border-b-2 border-transparent hover:border-gray-300">SEO</a>
+                <a href="#" class="block px-4 py-2 border-b-2 border-transparent hover:border-gray-300">Consulting</a>
+              </div>
+            </div>
+            <a href="#" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300">
+              About
+            </a>
+            <a href="#" class="inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300">
+              Contact
+            </a>
+          </div>
+        </div>
 
-    <!-- The hamburger menu -->
-    <label for="menu" tabindex="0"> ☰ </label>
-    <input id="menu" type="checkbox" />
+        <div class="-mr-2 flex items-center sm:hidden">
+          <button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
 
-    <!-- The menu displayed on small screen widths -->
-    <ul class="menu-compact">
-        {{ $disallowedInMenu := slice "news" }}
-        {{ $site := .Site }}
-        {{ range .Site.Sections }}
-            {{ if not (in $disallowedInMenu .Type) }}
-                <li>
-                    <details>
-                        <summary>
-                            {{ .Title }}
-                        </summary>
-                        <ul dir="rtl">
-                            {{ range .Pages }}
-                                {{ with .Params.sectiontypelink }}
-                                    {{ with $site.GetPage . }}
-                                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                                    {{ end }}
-                                {{ else}}
-                                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                                {{ end }}
-                            {{ end }}
-                        </ul>
-                    </details>
-                </li>
-            {{ end }}
-        {{ end }}
-    </ul>
-
-    <!-- The menu displayed on large screen widths -->
-    <ul class="menu-expanded">
-        {{ $disallowedInMenu := slice "news" }}
-        {{ $site := .Site }}
-        {{ range .Site.Sections }}
-            {{ if not (in $disallowedInMenu .Type) }}
-                <li>
-                    <button>{{ .Title }}</button>
-                    <ul class="submenu">
-                        {{ range .Pages }}
-                            {{ with .Params.sectiontypelink }}
-                                {{ with $site.GetPage . }}
-                                    <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
-                                {{ end }}
-                            {{ else}}
-                                <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
-                            {{ end }}
-                        {{ end }}
-                    </ul>
-                </li>
-            {{ end }}
-        {{ end }}
-    </ul>
-    
-</nav>
+    <div id="mobile-menu" class="hidden sm:hidden text-primary-yellow ">
+      <div class="pt-2 pb-3 space-y-1">
+        <a href="#" class=" block px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <div class="relative mobile-dropdown">
+          <button id="mobile-dropdown-button" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium">
+            Services
+          </button>
+          <div class="mobile-menu-submenu hidden bg-white shadow-lg mt-1 rounded-md">
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Development</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">SEO</a>
+            <a href="#" class="block px-4 py-2 hover:bg-gray-100">Consulting</a>
+          </div>
+        </div>
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium">About</a>
+        <a href="#" class="block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+      </div>
+    </div>
+  </nav>

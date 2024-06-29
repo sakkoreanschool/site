@@ -1,28 +1,49 @@
 {{ define "main" }}
   {{ .Content }}
-    <div class="splash">
-      <div class="hero">
-          <img src="{{ "/hero.jpg" }}" alt="Hero Image">
-      </div>
-      <div class="content">
-          <h1>{{ site.Title }}</h1>
-          <p>{{ T "tagline" }}</p>
+<div class="relative">
+      <img src="/img/hero.jpg" alt="Seattle Skyline and Korean script" class="w-full h-96 object-cover">
+      <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black via-transparent to-transparent w-full h-full"></div>
+    </div>
 
-          <div class="news">
-            <h4>{{ T "news_header" }}</h4>
+    <div class="container mx-auto p-4">
+      <div class="grid grid-cols-3 gap-4">
+        <div>
+          <h2 class="font-bold mb-2">공지사항</h2>
+          <ul class="bg-white p-4 rounded shadow">
+            <li class="mb-2">2023-2024학년도 제2학기 등록이 시작되었습니다. <span class="text-gray-500">2024-03-27</span></li>
+            <li class="mb-2">학교 행사 안내 <span class="text-gray-500">2024-03-20</span></li>
+            <li class="mb-2">새로운 교사 소개 <span class="text-gray-500">2024-03-15</span></li>
+            <li class="mb-2">학생회 모집 <span class="text-gray-500">2024-03-10</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="font-bold mb-2">월별행사</h2>
+          <div class="bg-white p-4 rounded shadow">
+            <p class="mb-2">2024년 3월</p>
             <ul>
-            {{ range first 10 (where .Site.Pages "Section" "news") }}
-               {{ range .Pages }}
-                  <li>
-                    <h5><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
-                    {{ .Date | time.Format ":date_long" }}
-                    <p>{{ .Summary }}</p>
-                  </li>
-               {{ end }}
-            {{ end }}
+              <li class="mb-2">소풍 <span class="text-gray-500">2024-03-05</span></li>
+              <li class="mb-2">운동회 <span class="text-gray-500">2024-03-12</span></li>
+              <li class="mb-2">학부모 총회 <span class="text-gray-500">2024-03-19</span></li>
             </ul>
           </div>
+        </div>
+
+        <div class="flex flex-col space-y-4">
+          <a href="#" class="bg-green-200 p-4 rounded shadow text-center">스쿨버스 노선</a>
+          <a href="#" class="bg-green-200 p-4 rounded shadow text-center">오시는 길</a>
+          <div class="flex justify-center">
+            <img src="qr-code-placeholder.png" alt="QR Code" class="w-32 h-32">
+          </div>
+          <p class="text-center text-gray-700">2023-2024학년도 2학기 등록이 시작되었습니다.<br>Registration for 2nd semester begins.</p>
+          <div class="flex justify-center space-x-4">
+            <a href="#"><img src="instagram-placeholder.png" alt="Instagram" class="w-6 h-6"></a>
+            <a href="#"><img src="facebook-placeholder.png" alt="Facebook" class="w-6 h-6"></a>
+            <a href="#"><img src="kakaotalk-placeholder.png" alt="KakaoTalk" class="w-6 h-6"></a>
+          </div>
+        </div>
       </div>
     </div>
+  </main>
 {{ end }}
 
