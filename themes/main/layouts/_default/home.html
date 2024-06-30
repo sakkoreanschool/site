@@ -5,21 +5,28 @@
       <div class="absolute bottom-0 left-0 bg-gradient-to-t from-black via-transparent to-transparent w-full h-full"></div>
     </div>
 
+    <!-- TODO: Make these stack on smaller screen sizes -->
     <div class="container mx-auto p-4">
       <div class="grid grid-cols-3 gap-4">
+        <!-- News section -->
         <div>
-          <h2 class="font-bold mb-2">공지사항</h2>
-          <ul class="bg-white p-4 rounded shadow">
-            <li class="mb-2">2023-2024학년도 제2학기 등록이 시작되었습니다. <span class="text-gray-500">2024-03-27</span></li>
-            <li class="mb-2">학교 행사 안내 <span class="text-gray-500">2024-03-20</span></li>
-            <li class="mb-2">새로운 교사 소개 <span class="text-gray-500">2024-03-15</span></li>
-            <li class="mb-2">학생회 모집 <span class="text-gray-500">2024-03-10</span></li>
+          <h2 class="font-bold mb-2">{{ T "news_header" }}</h2>
+          <ul class="bg-white p-4 rounded shadow min-h-64">
+            {{ range first 10 (where .Site.Pages "Section" "news") }}
+               {{ range .Pages }}
+                  <li class="mb-2">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                    <span class="text-gray-500">{{ .Date | time.Format ":date_long" }}</span>
+                  </li>
+               {{ end }}
+            {{ end }}
           </ul>
         </div>
 
+        <!-- This is an "events" section -->
         <div>
           <h2 class="font-bold mb-2">월별행사</h2>
-          <div class="bg-white p-4 rounded shadow">
+          <div class="bg-white p-4 rounded shadow min-h-64">
             <p class="mb-2">2024년 3월</p>
             <ul>
               <li class="mb-2">소풍 <span class="text-gray-500">2024-03-05</span></li>
@@ -29,17 +36,21 @@
           </div>
         </div>
 
+        <!-- Other callouts. Suggest registration link here -->
         <div class="flex flex-col space-y-4">
-          <a href="#" class="bg-green-200 p-4 rounded shadow text-center">스쿨버스 노선</a>
-          <a href="#" class="bg-green-200 p-4 rounded shadow text-center">오시는 길</a>
+          <div class="bg-green-200 p-4 rounded shadow text-center">
+            <h2>{{ T "register" }}</h2>
+          </div>
+
+          <div class="bg-green-200 p-4 rounded shadow text-center">
+            <h2>{{ T "location" }}</h2>
+            <p>11700 1st Ave NE, Seattle, WA 98125</p>
+          </div>
+
           <div class="flex justify-center">
-            <img src="qr-code-placeholder.png" alt="QR Code" class="w-32 h-32">
           </div>
           <p class="text-center text-gray-700">2023-2024학년도 2학기 등록이 시작되었습니다.<br>Registration for 2nd semester begins.</p>
           <div class="flex justify-center space-x-4">
-            <a href="#"><img src="instagram-placeholder.png" alt="Instagram" class="w-6 h-6"></a>
-            <a href="#"><img src="facebook-placeholder.png" alt="Facebook" class="w-6 h-6"></a>
-            <a href="#"><img src="kakaotalk-placeholder.png" alt="KakaoTalk" class="w-6 h-6"></a>
           </div>
         </div>
       </div>
