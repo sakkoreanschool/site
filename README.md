@@ -5,7 +5,7 @@ The goal is to create a static website that can be easily updated by nontechnica
 It uses the following technologies:
 * [Hugo](https://gohugo.io/) (static site generator)
 * [Decap] (https://decapcms.org/) (headless content management system)
-* [Pico css](https://picocss.com/) (Barebones css framework)
+* [Tailwind](https://tailwindcss.com/) (A utility-first CSS framework )
 * [Netlify](https://www.netlify.com/) (deployment)
 
 ## Development Tooling
@@ -23,7 +23,7 @@ asdf install
 ```
 
 ### Without `asdf`
-Follow the installation instructions from go and hugo.  You can reference the `.tool-versions` file in this repo for good version numbers. We're not using anything very specific so anything close should work fine.
+Follow the installation instructions from go and hugo.  You can reference the `.tool-versions` file in this repo for good version numbers. Make sure you're using the hugo extended version which provides css compilation required by tailwind.
 
 ### Windows
 This probably won't work on windows.  Maybe it will? I don't have access to a windows machine.
@@ -31,7 +31,12 @@ This probably won't work on windows.  Maybe it will? I don't have access to a wi
 ## Development
 Run
 ```bash
-hugo serve
+hugo server -D --disableFastRender
+```
+In another terminal
+```
+cd themes/main/static
+npx tailwindcss -i ./src/input.css -o ../assets/css/output.css --watch
 ```
 
 Changes to the pages will be automatically compiled and live reloaded.

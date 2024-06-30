@@ -1,15 +1,38 @@
-<nav>
-    <ul>
-        <li>
-          <h1>
-              <a id="page-title" href="{{ .Site.BaseURL | relLangURL }}">
-                  {{ site.Title }}
-              </a>
-          </h1>
-        </li>
-    </ul>
-    <ul class="languageToggle">
-        <li>
+  <nav class="h-full w-screen bg-primary-dark-blue text-primary-yellow shadow-lg z-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16">
+        <div class="flex justify-between space-x-24">
+          <div class="shrink-0 flex items-center">
+            <a href="{{ .Site.BaseURL | relLangURL }}" class="text-2xl font-bold">{{ site.Title }}</a>
+          </div>
+
+          <!-- This is the menu displayed at large screen widths -->
+          <!-- TODO: single item stuff is not working -->
+          <div class="hidden sm:flex sm:space-x-8 mx-auto">
+          {{ $disallowedInMenu := slice "news" }}
+          {{ $site := .Site }}
+          {{ range .Site.Sections }}
+              {{ if not (in $disallowedInMenu .Type) }}
+                  <div class="relative group items-center justify-center h-full">
+                      <button class="text-primary-yellow inline-flex items-center px-1 pt-5 border-b-2 border-transparent hover:border-gray-300 text-nowrap text-lg shadow">{{ .Title }}</button>
+                      <div class="absolute hidden group-hover:block shadow-lg mt-1 rounded-md z-40 bg-primary-dark-blue p-2">
+                          {{ range .Pages }}
+                              {{ with .Params.sectiontypelink }}
+                                  {{ with $site.GetPage . }}
+                                      <a href="{{ .Permalink }}" class="inline-flex items-center px-1 py-1 border-b-2 border-transparent hover:border-gray-300 text-nowrap">{{ .Title }}</a>
+                                  {{ end }}
+                              {{ else}}
+                                <a href="{{ .Permalink }}" class="inline-flex items-center px-1 py-1 border-b-2 border-transparent hover:border-gray-300 text-nowrap">{{ .Title }}</a>
+                              {{ end }}
+                          {{ end }}
+                      </div>
+                  </div>
+              {{ end }}
+          {{ end }}
+          </div>
+
+          <!-- TODO: fix vertical align -->
+          <div class="hidden sm:flex sm:space-x-8 mx-auto items-center justify-center">
             {{ $siteLanguages := site.Languages}}
             {{ $pageLang := .Page.Lang}}
             {{- range .Page.AllTranslations }}
@@ -17,68 +40,62 @@
                 {{- range sort $siteLanguages "Weight" "asc" }}
                     {{- if eq $translation.Lang .Lang }}
                       {{ if ne $pageLang .Lang}}
-                        <a href="{{ $translation.Permalink | relURL }}">{{ .LanguageConfig.LanguageName }}</a>
+                        <a href="{{ $translation.Permalink | relURL }}" class="text-nowrap">{{ .LanguageConfig.LanguageName }}</a>
                       {{ end }}
                     {{- end }}
                 {{ end }}
             {{- end }}
-        </li>
-    </ul>
+          </div>
+        </div>
 
-    <!-- The hamburger menu -->
-    <label for="menu" tabindex="0"> ☰ </label>
-    <input id="menu" type="checkbox" />
+        <!-- This is the mobile menu button -->
+        <div class="-mr-2 flex items-center sm:hidden ml-auto">
+          <button id="mobile-menu-button" type="button" class="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
 
-    <!-- The menu displayed on small screen widths -->
-    <ul class="menu-compact">
+
+    <div id="mobile-menu" class="hidden sm:hidden text-primary-yellow ">
+      <div class="pt-2 pb-3 space-y-1 flex flex-col">
         {{ $disallowedInMenu := slice "news" }}
         {{ $site := .Site }}
         {{ range .Site.Sections }}
             {{ if not (in $disallowedInMenu .Type) }}
-                <li>
-                    <details>
-                        <summary>
-                            {{ .Title }}
-                        </summary>
-                        <ul dir="rtl">
-                            {{ range .Pages }}
-                                {{ with .Params.sectiontypelink }}
-                                    {{ with $site.GetPage . }}
-                                        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                                    {{ end }}
-                                {{ else}}
-                                    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-                                {{ end }}
-                            {{ end }}
-                        </ul>
-                    </details>
-                </li>
-            {{ end }}
-        {{ end }}
-    </ul>
-
-    <!-- The menu displayed on large screen widths -->
-    <ul class="menu-expanded">
-        {{ $disallowedInMenu := slice "news" }}
-        {{ $site := .Site }}
-        {{ range .Site.Sections }}
-            {{ if not (in $disallowedInMenu .Type) }}
-                <li>
-                    <button>{{ .Title }}</button>
-                    <ul class="submenu">
+                <div class="relative mobile-dropdown">
+                    <button id="mobile-dropdown-button" class="block w-full text-left px-3 py-2 rounded-md text-base font-medium">{{ .Title }}</button>
+                    <div class="mobile-menu-submenu hidden bg-white shadow-lg mt-1 rounded-md">
                         {{ range .Pages }}
                             {{ with .Params.sectiontypelink }}
                                 {{ with $site.GetPage . }}
-                                    <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
+                                  <a href="{{ .Permalink }}" class="block px-4 py-2 hover:bg-gray-100">{{ .Title }}</a>
                                 {{ end }}
                             {{ else}}
-                                <a href="{{ .Permalink }}"><li>{{ .Title }}</li></a>
+                                <a href="{{ .Permalink }}" class="block px-4 py-2 hover:bg-gray-100">{{ .Title }}</a>
                             {{ end }}
                         {{ end }}
-                    </ul>
-                </li>
+                    </div>
+                </div>
             {{ end }}
         {{ end }}
-    </ul>
-    
-</nav>
+
+        {{ $siteLanguages := site.Languages}}
+            {{ $pageLang := .Page.Lang}}
+            {{- range .Page.AllTranslations }}
+                {{ $translation := . }}
+                {{- range sort $siteLanguages "Weight" "asc" }}
+                    {{- if eq $translation.Lang .Lang }}
+                      {{ if ne $pageLang .Lang}}
+                        <a href="{{ $translation.Permalink | relURL }}" class="text-nowrap block w-full text-left px-3 py-2 rounded-md text-base font-medium">{{ .LanguageConfig.LanguageName }}</a>
+                      {{ end }}
+                    {{- end }}
+                {{ end }}
+            {{- end }}
+      </div>
+    </div>
+  </nav>
