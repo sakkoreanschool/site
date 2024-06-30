@@ -1,25 +1,14 @@
-<form>
-  <fieldset>
-    <label>
-      {{ T "english_name" }}
-      <input
-        name="name_en"
-        placeholder="{{ T "english_name" }}"
-        autocomplete="english-name"
-      />
-    </label>
-    <label>
-      {{ T "email" }}
-      <input
-        type="email"
-        name="email"
-        placeholder="{{ T "email" }}"
-        autocomplete="email"
-      />
-    </label>
-  </fieldset>
-  <input
-    type="submit"
-    value="{{ T "register" }}"
-  />
-</form>
+<div id="react-root"></div>
+{{- with resources.Get "js/index.jsx" }}
+  {{- if eq hugo.Environment "development" }}
+    {{- $opts := dict "JSX" "transform"  }}
+    {{- with . | js.Build $opts }}
+      <script src="{{ .RelPermalink }}"></script>
+    {{- end }}
+  {{- else }}
+    {{- $opts := dict "minify" true "JSX" "transform" }}
+    {{- with . | js.Build $opts | fingerprint }}
+      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+    {{- end }}
+  {{- end }}
+{{- end }}
