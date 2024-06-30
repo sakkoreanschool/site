@@ -632,10 +632,6 @@ h2 {
   z-index: 40;
 }
 
-.float-right {
-  float: right;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -655,10 +651,6 @@ h2 {
 
 .mt-1 {
   margin-top: 0.25rem;
-}
-
-.-mr-5 {
-  margin-right: -1.25rem;
 }
 
 .block {
@@ -685,10 +677,6 @@ h2 {
   height: 4rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
 .h-6 {
   height: 1.5rem;
 }
@@ -701,20 +689,12 @@ h2 {
   height: 100%;
 }
 
-.min-h-1 {
-  min-height: 0.25rem;
-}
-
-.min-h-40 {
-  min-height: 10rem;
-}
-
 .min-h-64 {
   min-height: 16rem;
 }
 
-.w-32 {
-  width: 8rem;
+.w-3\/5 {
+  width: 60%;
 }
 
 .w-6 {
@@ -727,10 +707,6 @@ h2 {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-3\/5 {
-  width: 60%;
 }
 
 .max-w-7xl {
@@ -751,10 +727,6 @@ h2 {
 
 .items-center {
   align-items: center;
-}
-
-.justify-end {
-  justify-content: flex-end;
 }
 
 .justify-center {
@@ -888,16 +860,6 @@ h2 {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.py-40 {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
 }
 
 .py-8 {
