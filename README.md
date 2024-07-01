@@ -31,12 +31,11 @@ This probably won't work on windows.  Maybe it will? I don't have access to a wi
 ## Development
 Run
 ```bash
-hugo server -D --disableFastRender
+hugo server -D --disableFastRender --environment development
 ```
 In another terminal
 ```
-cd themes/main/static
-npx tailwindcss -i ./src/input.css -o ../assets/css/output.css --watch
+npx tailwindcss -i ./themes/main/static/src/input.css -o ./themes/main/assets/css/output.css --watch
 ```
 
 Changes to the pages will be automatically compiled and live reloaded.
