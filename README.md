@@ -38,6 +38,10 @@ In another terminal
 npx tailwindcss -i ./themes/main/static/src/input.css -o ./themes/main/assets/css/output.css --watch
 ```
 
+## Notes
+Javascript is automatically compiled
+https://gohugo.io/hugo-pipes/js/
+
 Changes to the pages will be automatically compiled and live reloaded.
 
 ## Translation
