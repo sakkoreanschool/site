@@ -14,18 +14,18 @@
           {{ range .Site.Sections }}
               {{ if not (in $disallowedInMenu .Type) }}
                   <div class="relative group items-center justify-center h-full">
-                      <button class="text-primary-yellow inline-flex items-center px-1 pt-5 border-b-2 border-transparent hover:border-gray-300 text-nowrap text-lg shadow">{{ .Title }}</button>
-                      <div class="absolute hidden group-hover:block shadow-lg mt-1 rounded-md z-40 bg-primary-dark-blue p-2">
+                      <button class="text-primlary-yellow inline-flex items-center px-1 pt-5 border-b-2 border-transparent hover:border-gray-300 text-nowrap text-lg shadow">{{ .Title }}</button>
+                      <ul class="absolute hidden group-hover:block shadow-lg mt-1 rounded-md z-40 bg-primary-dark-blue p-2">
                           {{ range .Pages }}
                               {{ with .Params.sectiontypelink }}
                                   {{ with $site.GetPage . }}
-                                      <a href="{{ .Permalink }}" class="inline-flex items-center px-1 py-1 border-b-2 border-transparent hover:border-gray-300 text-nowrap">{{ .Title }}</a>
+                                      <li><a href="{{ .Permalink }}" class="inline-flex items-center px-1 py-1 border-b-2 border-transparent hover:border-gray-300 text-nowrap">{{ .Title }}</a></li>
                                   {{ end }}
                               {{ else}}
-                                <a href="{{ .Permalink }}" class="inline-flex items-center px-1 py-1 border-b-2 border-transparent hover:border-gray-300 text-nowrap">{{ .Title }}</a>
+                                <li><a href="{{ .Permalink }}" class="inline-flex items-center px-1 py-1 border-b-2 border-transparent hover:border-gray-300 text-nowrap">{{ .Title }}</a></li>
                               {{ end }}
                           {{ end }}
-                      </div>
+                      </ul>
                   </div>
               {{ end }}
           {{ end }}

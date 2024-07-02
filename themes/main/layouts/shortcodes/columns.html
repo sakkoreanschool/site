@@ -1,0 +1,41 @@
+<!-- Usage:
+Separate columns with `###`
+If you want a header, put some text after `###`.
+Be careful that the markdown you use does not have `###` in it.
+Maybe should switch to another delimiter -->
+
+{{ $content := trim .Inner "\n\r" }}
+{{ $parts := split $content "###" }}
+
+{{ $headers := slice }}
+{{ $columnContents := slice }}
+{{ range $parts }}
+  {{ if ne . "" }}
+    {{ $lines := split . "\n" }}
+    {{ if gt (len $lines) 1 }} <!-- Check if there are at least two lines -->
+      {{ $header := index $lines 0 }}
+      {{ $headers = append $headers (slice $header) }}
+      {{ $column := delimit (after 1 $lines) "\n" }}
+      {{ $columnContents = append $columnContents (slice $column) }}
+    {{ else }}
+      {{ $columnContents = append $columnContents (slice .) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $headersMatchContents := eq (len $headers) (len $columnContents) }}
+{{$headers = collections.Reverse $headers}}
+{{$columnContents = collections.Reverse $columnContents}}
+
+<div class="container mx-auto">
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6">
+    {{ range $index, $entry := $columnContents }}
+      <div class="border-solid border-2">
+      {{ if $headersMatchContents }}
+        <p class="text-bold bg-gray-200">{{ (index $headers $index) }}</p>
+      {{ end }}
+        <p>{{ $entry | markdownify }}</p>
+      </div>
+    {{ end }}
+  </div>
+</div>
