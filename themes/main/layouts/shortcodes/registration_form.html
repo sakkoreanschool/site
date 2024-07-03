@@ -1,5 +1,8 @@
-<div id="react-root"></div>
-{{- with resources.Get "js/index.jsx" }}
+## 2024 Autumn Registration
+<div id="root"></div>
+{{ $file := resources.Get "js/reregister_index.jsx"}}
+{{ debug.Dump $file }}
+{{- with resources.Get "js/reregister_index.js" }}
   {{- if eq hugo.Environment "development" }}
     {{- $opts := dict "JSX" "transform"  }}
     {{- with . | js.Build $opts }}

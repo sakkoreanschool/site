@@ -9,7 +9,7 @@
           <!-- This is the menu displayed at large screen widths -->
           <!-- TODO: single item stuff is not working -->
           <div class="hidden sm:flex sm:space-x-8 mx-auto">
-          {{ $disallowedInMenu := slice "news" "news_menu" "events" }}
+          {{ $disallowedInMenu := slice "news" "news_menu" "registration_pages" "events" }}
           {{ $site := .Site }}
           {{ range .Site.Sections }}
               {{ if not (in $disallowedInMenu .Type) }}
