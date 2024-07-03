@@ -9,5 +9,3 @@ weight: "45"
 bladlfjslfjdslkfsjfdlkjsd
 
 ## Korean Classes
-
-sdfsfssdfsdfs
