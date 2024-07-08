@@ -1,7 +1,6 @@
 import SteinStore from 'stein-js-client';
 import Constants from '../constants';
 import { confirmAlert } from 'react-confirm-alert'; // Import
-import 'react-confirm-alert/src/react-confirm-alert.css'; // Import css
 
 const store = new SteinStore(
     "https://api.steinhq.com/v1/storages/5d3fb20987c49c04cac13693"
