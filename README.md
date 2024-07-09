@@ -29,11 +29,19 @@ Follow the installation instructions from go and hugo.  You can reference the `.
 This probably won't work on windows.  Maybe it will? I don't have access to a windows machine.
 
 ## Development
-Run
+Run these commands from the root of the repo:
+
+Install Javascript dependencies
+```
+npm install
+```
+
+Start the Hugo server
 ```bash
 hugo server -D --disableFastRender --environment development
 ```
-In another terminal
+
+In another terminal, start the process that compiles the tailwind CSS
 ```
 npx tailwindcss -i ./themes/main/static/src/input.css -o ./themes/main/assets/css/output.css --watch
 ```
