@@ -1,5 +1,6 @@
 import SteinStore from 'stein-js-client';
 import Constants from '../constants';
+import { confirmAlert } from 'react-confirm-alert';
 
 const store = new SteinStore(
     "https://api.steinhq.com/v1/storages/5d3fb20987c49c04cac13693"
@@ -9,11 +10,20 @@ function writeToDatabase(parentInfo, student, prepareStudent) {
     let registration = {...parentInfo, ...student};
 
     writeRegistration(registration, () => {
-        if (confirm("추가 등록할 학생이 있습니까? (Do you need to enter an additional student?)") == true) {
-            prepareStudent();
-        } else {
-            window.location.href = '/registration_pages/confirmation';
-        }
+        confirmAlert({
+            title: '추가 학생 등록',
+            message: '추가 등록할 학생이 있습니까? (Do you need to enter an additional student?)',
+            buttons: [
+              {
+                label: 'Yes',
+                onClick: () => prepareStudent()
+              },
+              {
+                label: 'No',
+                onClick: () => { redirectRelative('confirmation'); }
+              }
+            ]
+          });
     });
 }
 
@@ -42,6 +52,13 @@ async function searchDatabase(email) {
       }).catch(err => {
         console.log(err);
     });
+}
+
+// Replace the last path segment with a new one
+function redirectRelative(dest) {
+    let basePath = window.location.pathname.split('/');
+    basePath.splice(-2, 1, dest);
+    window.location.href = basePath.join('/');
 }
 
 export default {writeToDatabase, searchDatabase, writeRegistration};
