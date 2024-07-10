@@ -21,7 +21,7 @@ const Reregister = ({year}) => {
     results.forEach(async element => {
       // console.log(element);
       await Stein.writeRegistration(element, () => {
-        window.location.href = '/confirmation';
+        window.location.href = '/registration_pages/confirmation';
       });
     });
   };
@@ -32,7 +32,7 @@ const Reregister = ({year}) => {
           <h2>재등록 | Reregister </h2>
           <h4><div dangerouslySetInnerHTML={{ __html: year }} /></h4>
           <p>1-2학기 재학생만 가능, 신입생은 새로 등록해주세요. <br/>
-          Only for returning students, for new students please use the other <a href="/register">form</a>.
+          Only for returning students, for new students please use the other <a href="/registration_pages/register/">form</a>.
           </p>
           <Form.Label><strong>부모 이메일 주소 | Parent Email</strong></Form.Label>
           <Row>
@@ -59,7 +59,7 @@ const Reregister = ({year}) => {
       <div>Found {results.length} student(s): <br/>
         {results.map(element => 
         <b>{element.engName}<br/></b>)}
-        {results.length === 0 ? <p>Please register <a href="/register">here</a>.</p>: <Button variant="success" type="submit" style={{marginTop:'10px'}}>
+        {results.length === 0 ? <p>Please register <a href="/registration_pages/register/">here</a>.</p>: <Button variant="success" type="submit" style={{marginTop:'10px'}}>
           Reregister all
         </Button> }
       </div>
