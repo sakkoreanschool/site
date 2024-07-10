@@ -27,11 +27,15 @@
         <div>
           <h2 class="font-bold mb-2">월별행사</h2>
           <div class="bg-white p-4 rounded shadow min-h-64">
-            <p class="mb-2">2024년 3월</p>
             <ul>
-              <li class="mb-2">소풍 <span class="text-gray-500">2024-03-05</span></li>
-              <li class="mb-2">운동회 <span class="text-gray-500">2024-03-12</span></li>
-              <li class="mb-2">학부모 총회 <span class="text-gray-500">2024-03-19</span></li>
+              {{ range first 10 (where .Site.Pages "Section" "events") }}
+                 {{ range .Pages }}
+                    <li class="mb-2">
+                      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                      <span class="text-gray-500">{{ .Date | time.Format ":date_long" }}</span>
+                    </li>
+                 {{ end }}
+              {{ end }}
             </ul>
           </div>
         </div>

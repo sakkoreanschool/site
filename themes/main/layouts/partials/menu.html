@@ -9,7 +9,7 @@
           <!-- This is the menu displayed at large screen widths -->
           <!-- TODO: single item stuff is not working -->
           <div class="hidden sm:flex sm:space-x-8 mx-auto">
-          {{ $disallowedInMenu := slice "news" "news_menu" }}
+          {{ $disallowedInMenu := slice "news" "news_menu" "events" }}
           {{ $site := .Site }}
           {{ range .Site.Sections }}
               {{ if not (in $disallowedInMenu .Type) }}
@@ -63,7 +63,6 @@
 
     <div id="mobile-menu" class="hidden sm:hidden text-primary-yellow ">
       <div class="pt-2 pb-3 space-y-1 flex flex-col">
-        {{ $disallowedInMenu := slice "news" }}
         {{ $site := .Site }}
         {{ range .Site.Sections }}
             {{ if not (in $disallowedInMenu .Type) }}
