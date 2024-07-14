@@ -13,6 +13,63 @@
     <!-- Additional shortcode support for use in the CMS -->
     <script src="https://sharadcodes.github.io/hugo-shortcodes-netlify-cms/dist/hugo_shortcodes_netlify_cms.js"></script>
     <script>
+      CMS.registerEditorComponent({
+          id: "registration_form",
+          label: "Registration Form",
+          fields: [{
+                  name: "year",
+                  label: "Year",
+                  widget: "string"
+              },
+              {
+                  name: "quarter",
+                  label: "학기",
+                  widget: "string"
+              },
+          ],
+          pattern: /^\{\{%\s*registration_form\s+year="([\w\u0080-\uFFFF]+)"\s+quarter="([\w\u0080-\uFFFF]+)"\s*%\}\}/,
+          fromBlock: function(match) {
+              return {
+                  year: match[1],
+                  quarter: match[2],
+              };
+          },
+          toBlock: function(obj) {
+              return `{{% registration_form year="${obj.year}" quarter="${obj.quarter}" %}}`;
+          },
+          toPreview: function(obj) {
+              return `<h2>Registration form here for year ${obj.year} and quarter: ${obj.quarter}</h2>`;
+          },
+      });
+
+      CMS.registerEditorComponent({
+          id: "reregistration_form",
+          label: "ReRegistration Form",
+          fields: [{
+                  name: "year",
+                  label: "Year",
+                  widget: "string"
+              },
+              {
+                  name: "quarter",
+                  label: "학기",
+                  widget: "string"
+              },
+          ],
+          pattern: /^\{\{%\s*reregistration_form\s+year="([\w\u0080-\uFFFF]+)"\s+quarter="([\w\u0080-\uFFFF]+)"\s*%\}\}/,
+          fromBlock: function(match) {
+              return {
+                  year: match[1],
+                  quarter: match[2],
+              };
+          },
+          toBlock: function(obj) {
+              return `{{% reregistration_form year="${obj.year}" quarter="${obj.quarter}" %}}`;
+          },
+          toPreview: function(obj) {
+              return `<h2>ReRegistration form here for year ${obj.year} and quarter: ${obj.quarter}</h2>`;
+          },
+      });
       // A hacky table component using decap's inbuilt widget definition.
       // Data looks like this:
       // {
