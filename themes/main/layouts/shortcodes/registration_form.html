@@ -1,6 +1,4 @@
-## {{ .Get "year" }} {{ .Get "quarter" }} ReRegistration
 <div id="root" {{ with .Get "year" }}data-year="{{ . }}"{{ end }}></div>
-
 
 {{- with resources.Get "js/register_index.jsx" }}
   {{- if eq hugo.Environment "development" }}

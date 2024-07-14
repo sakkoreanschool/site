@@ -15,10 +15,6 @@ const Register = ({year}) => {
 
   return (
     <Container style={{marginTop:'50px'}}>
-      <h1>Registration</h1>
-      <h4><div dangerouslySetInnerHTML={{ __html: year }} /></h4>
-      <br></br>
-
       <Container style={{backgroundColor: '#eee', borderRadius: '7px', padding: '20px'}}>
         {
           step === undefined && <p>Loading...</p>

@@ -1,5 +1,3 @@
-
-## {{ .Get "year" }} {{ .Get "quarter" }} Registration
 <div id="root" {{ with .Get "year" }}data-year="{{ . }}"{{ end }}></div>
 
 {{- with resources.Get "js/reregister_index.jsx" }}
