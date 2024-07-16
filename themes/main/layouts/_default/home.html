@@ -29,7 +29,7 @@
           <div class="bg-white p-4 rounded shadow min-h-64">
             <ul>
               {{ range first 10 (where .Site.Pages "Section" "events") }}
-                 {{ range .Pages }}
+                 {{ range .Pages.ByDate }}
                     <li class="mb-2">
                       <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                       <span class="text-gray-500">{{ .Date | time.Format ":date_long" }}</span>
