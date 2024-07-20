@@ -26,9 +26,9 @@ weight: "45"
 
 
 {{< two_column borders="true" >}}
-##### 학급 명
+**학급 명**
 <!-- split -->
-##### 교재
+**교재**
 {{< /two_column >}}
 
 
@@ -91,9 +91,9 @@ weight: "45"
 
 
 {{< two_column borders="true" >}}
-##### 학급 명
+**학급 명**
 <!-- split -->
-##### 교재
+**교재**
 {{< /two_column >}}
 
 
@@ -124,4 +124,4 @@ weight: "45"
 
 ### 봄 & 가을학기 학사일정 2023-2024 학년도
 
-![](/img/curriculum.jpeg)
+![](/img/screenshot-2024-07-20-at-3.44.40 pm.png)
