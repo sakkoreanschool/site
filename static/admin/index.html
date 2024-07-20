@@ -94,7 +94,6 @@
           pattern: /{{<\s*two_column\s*(borders\s*=\s*"(true|false)")?\s*>}}([\s\S]*?)<!--\s*split\s*-->([\s\S]*?){{\s*<\s*\/two_column\s*>}}/,
           fromBlock: function(match) {
             const borders = match[2] ? match[2] : "false";
-            console.log("boreders, ", borders)
             const left = match[3].trim();
             const right = match[4].trim();
               return {
