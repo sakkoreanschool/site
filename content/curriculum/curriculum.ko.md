@@ -25,10 +25,10 @@ weight: "45"
 #### 금요 반
 
 
-{{< two_column borders="false" >}}
-### 학급 명
+{{< two_column borders="true" >}}
+##### 학급 명
 <!-- split -->
-### 교재
+##### 교재
 {{< /two_column >}}
 
 
@@ -88,10 +88,10 @@ weight: "45"
 {{< /two_column >}}
 
 #### 토요 반
-{{< two_column borders="false" >}}
-### 학급 명
+{{< two_column borders="true" >}}
+##### 학급 명
 <!-- split -->
-### 교재
+##### 교재
 {{< /two_column >}}
 
 
