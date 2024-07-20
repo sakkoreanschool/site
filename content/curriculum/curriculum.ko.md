@@ -24,70 +24,88 @@ weight: "45"
 
 #### 금요 반
 
-{{< columns >}}
 
+{{< two_column borders="false" >}}
 ### 학급 명
-
-금 유치 가 반
-
+<!-- split -->
 ### 교재
+{{< /two_column >}}
 
-{{< /columns >}}
 
-{{< columns >}}
+{{< two_column borders="true" >}}
+금 유치 가 반
+<!-- split -->
 
-금유치 나 반
+{{< /two_column >}}
 
-{{< /columns >}}
 
-{{< columns >}}
+{{< two_column borders="true" >}}
+금 유치 나 반
+<!-- split -->
 
+{{< /two_column >}}
+
+
+{{< two_column borders="true" >}}
 금 기초반
+<!-- split -->
 
-{{< /columns >}}
+{{< /two_column >}}
 
-{{< columns >}}
 
+{{< two_column borders="true" >}}
+금 기초반
+<!-- split -->
+
+{{< /two_column >}}
+
+
+{{< two_column borders="true" >}}
 금 초급 반
+<!-- split -->
 
-{{< /columns >}}
+{{< /two_column >}}
 
-{{< columns >}}
 
+{{< two_column borders="true" >}}
 금 중급 반
+<!-- split -->
 
-{{< /columns >}}
+{{< /two_column >}}
 
-{{< columns >}}
 
+{{< two_column borders="true" >}}
 금 고급 반
+<!-- split -->
 
-{{< /columns >}}
+{{< /two_column >}}
 
-{{< columns >}}
 
+{{< two_column borders="true" >}}
 금 성인 반
+<!-- split -->
 
-{{< /columns >}}
+{{< /two_column >}}
 
 #### 토요 반
-
-{{< columns >}}
-
+{{< two_column borders="false" >}}
 ### 학급 명
-
-토 유치 반
-
+<!-- split -->
 ### 교재
+{{< /two_column >}}
 
-{{< /columns >}}
 
-{{< columns >}}
+{{< two_column borders="true" >}}
+토 유치 반
+<!-- split -->
 
+{{< /two_column >}}
+
+{{< two_column borders="true" >}}
 토 기초 반
-
+<!-- split -->
 재외동포를위한한국어3-1&3-2
-{{< /columns >}}
+{{< /two_column >}}
 
 ### 말하기 반
 
