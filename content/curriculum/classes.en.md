@@ -5,5 +5,3 @@ description: Page describing the different levels
 ---
 
 English classes page
-
-{{% class_description class_name="Basic" description="The basic class" %}}

@@ -11,10 +11,20 @@
     {{ end }}
   </head>
   <body class="bg-white">
+    {{ $pageLang := .Page.Lang}}
+    {{ $basePath := "" }}
+
+    <!-- English is default so no prefix is necessary -->
+    {{ if eq $pageLang "en"}}
+      {{ $basePath = "" }}
+    {{ else }}
+      {{ $basePath = .Page.Lang }}
+    {{ end }}
+
     <header class="bg-primary-dark-blue">
-      <a href="/">Back to main site</a>
+      <a class="btn btn-primary my-2 mx-4" href="/{{$basePath}}">⇦ Back to main site</a>
     </header>
-    <main class="bg-white text-black">
+    <main class="bg-white text-black my-4">
       {{ block "main" . }}{{ end }}
     </main>
     <footer class="container">

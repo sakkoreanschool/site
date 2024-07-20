@@ -6,6 +6,14 @@ weight: "45"
 ---
 ## Introduction
 
-bladlfjslfjdslkfsjfdlkjsd
+{{< two_column borders="true">}}
+## Column 1
+This is some content for the first column.
 
-## Korean Classes
+Another paragraph in the first column.
+<!-- split -->
+## Column 2
+This is some content for the second column.
+
+Another paragraph in the second column.
+{{< /two_column >}}

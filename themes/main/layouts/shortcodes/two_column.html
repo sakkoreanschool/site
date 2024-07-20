@@ -1,0 +1,10 @@
+{{ $parts := split .Inner "<!-- split -->" }}
+{{ $borders := .Get "borders" | default "false" }}
+<div class="grid grid-cols-1 md:grid-cols-2 {{ if eq $borders "false" }}gap-4{{ end }}">
+  <div class="{{ if eq $borders "true" }}border px-2 py-0{{ end }}">
+    {{ index $parts 0 | markdownify }}
+  </div>
+  <div class="{{ if eq $borders "true" }}border px-2 py-0{{ end }}">
+    {{ index $parts 1 | markdownify }}
+  </div>
+</div>
