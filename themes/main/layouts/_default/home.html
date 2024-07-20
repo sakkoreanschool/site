@@ -45,7 +45,7 @@
                 <li class="mb-2 text-gray-500">{{ T "no_content" }}</li>
               {{ else }}
                 {{ range first 10 ($eventsPages) }}
-                   {{ range .Pages.ByDate }}
+                   {{ range .Pages.ByDate.Reverse }}
                       <li class="mb-2">
                         <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                         <span class="text-gray-500">{{ .Date | time.Format ":date_long" }}</span>
