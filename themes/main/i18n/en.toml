@@ -5,3 +5,4 @@ tagline = 'St. Andrew Kim Korean School is a Korean school in North Seattle. Thi
 news_header='News'
 home = 'Home'
 location = 'Location'
+no_content = 'Nothing to show'
