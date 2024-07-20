@@ -88,6 +88,8 @@ weight: "45"
 {{< /two_column >}}
 
 #### 토요 반
+
+
 {{< two_column borders="true" >}}
 ##### 학급 명
 <!-- split -->
@@ -100,6 +102,7 @@ weight: "45"
 <!-- split -->
 
 {{< /two_column >}}
+
 
 {{< two_column borders="true" >}}
 토 기초 반
@@ -118,3 +121,7 @@ weight: "45"
 ### 여름방학캠프
 
 날짜: 8/12(월)~17(금)
+
+### 봄 & 가을학기 학사일정 2023-2024 학년도
+
+![](/img/curriculum.jpeg)
