@@ -23,7 +23,7 @@ collections:
     i18n: true
     folder: 'content/about'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
@@ -38,7 +38,7 @@ collections:
     i18n: true
     folder: 'content/contact'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
@@ -53,7 +53,7 @@ collections:
     i18n: true
     folder: 'content/curriculum'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
@@ -63,12 +63,12 @@ collections:
       - { label: 'Body', name: 'body', widget: 'markdown', i18n: true }
       - { label: 'weight', name: 'weight', widget: 'string', i18n: true, hint: "입력된 숫자가 낮을수록, 항목은 메뉴 상위에 위치한다" }
 
-  - name: 'involvment'
+  - name: 'involvement'
     label: '등록'
     i18n: true
-    folder: 'content/involvment'
+    folder: 'content/involvement'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
@@ -83,7 +83,7 @@ collections:
     i18n: true
     folder: 'content/volunteer'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
@@ -112,7 +112,7 @@ collections:
     i18n: true
     folder: 'content/registration_pages'
     create: false
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{slug}}'
     editor:
       preview: false
     fields:
