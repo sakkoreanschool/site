@@ -1,5 +1,5 @@
 ---
-title: Register Now1
+title: Register Now
 date: 2024-02-22T05:58:03.337Z
 description: Registration for 2nd semester begins
 ---
