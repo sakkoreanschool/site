@@ -11,7 +11,10 @@
     <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@3.1.11/dist/decap-cms.js"></script>
     <!-- Additional shortcode support for use in the CMS -->
-    <script src="https://sharadcodes.github.io/hugo-shortcodes-netlify-cms/dist/hugo_shortcodes_netlify_cms.js"></script>
+
+<!--     Here is where we register Hugo shortcodes that live in
+    `/themes/main/layouts/shortcodes` so they can be edited in the CMS
+    https://decapcms.org/docs/custom-widgets/#registereditorcomponent -->
     <script>
       CMS.registerEditorComponent({
           id: "registration_form",
@@ -113,6 +116,29 @@ ${obj.right || ""}
           },
           toPreview: function(obj) {
               return `Two column preview. Border: ${obj.borders}. left: ${obj.left}\nright: ${obj.right}`;
+          },
+      });
+
+      // This component from https://github.com/sharadcodes/hugo-shortcodes-netlify-cms/blob/master/src/youtube.js
+      CMS.registerEditorComponent({
+          id: "youtube",
+          label: "Youtube",
+          fields: [{
+              name: "id",
+              label: "Youtube Video ID",
+              widget: "string"
+          }],
+          pattern: /{{< youtube\s+(?<id>[A-Za-z0-9\-]+)\s+>}}/,
+          fromBlock: function(match) {
+              return {
+                  id: match[1],
+              };
+          },
+          toBlock: function(obj) {
+              return `{{< youtube ${obj.id} >}}`;
+          },
+          toPreview: function(obj) {
+              return `<img src="https://i3.ytimg.com/vi/${obj.id}/hqdefault.jpg" alt="Youtube Video"/>`;
           },
       });
     </script>
