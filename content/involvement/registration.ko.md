@@ -2,8 +2,36 @@
 title: 학기등록
 date: 2024-02-22T05:58:03.337Z
 description: 2023-2024학년도 2학기 등록이 시작되었습니다
+weight: "1"
 ---
-
 <a class="bg-blue-  500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-8" href="/ko/registration_pages/register">등록</a>
 
 <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="/ko/registration_pages/reregister">재등록</a>
+
+
+
+2024-2025 1학기
+
+♦ 1학기 개강 일자 : 9월 13일 금요일( 금요반 ) , 9월 14일 토요일( 토요반 )
+
+♦ 1학기 수업 기간 : 9월 13일 \~ 1월 24일( 금요반 ), 9월 14일 \~ 1월 25일( 토요반 ) (총 16주, 2024-2025년)
+
+
+
+학급편성:
+
+금요반: 유치가(만4세: 09/13/2024 기준), 유치나, 기초1, 기초2, 기초3, 초급, 중급, 고급, 말하기반( 비대면 수업 )
+
+토요반: 유치반, 기초반
+
+등록금 (수업료, 교재비 포함):
+
+$270 (신입생 등록비 $10 별도)
+
+다자녀 할인: 한 가정의 셋째, 넷째 자녀는 감면 ($50/1명) 혜택이 있습니다.
+
+\*\*수표는 1학기 개학날에 지불하셔도 됩니다. 카드는 받지 않습니다.
+
+
+
+♦ 문의: sakks10@gmail.com
