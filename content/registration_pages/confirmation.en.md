@@ -7,7 +7,9 @@ Korean school starts: Sep 13th Friday(Friday class), Sep 14th Saturday(Saturday 
 
 Tuition: $270 + $10 (only New student registration Fee) 
 
-Tuition for Special Activity Class is $230.
+Adult Class($250) 
+
+Special Activity class($230) 
 
 You can pay tuition at the school office
 
