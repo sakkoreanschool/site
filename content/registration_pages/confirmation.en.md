@@ -9,7 +9,7 @@ Tuition: $270 + $10 (only New student registration Fee)
 
 Adult Class($250) 
 
-Special Activity class($230) 
+Special Activity Class($230) 
 
 You can pay tuition at the school office
 
