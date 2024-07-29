@@ -86,7 +86,7 @@ const Student = (props) => {
         </Row>
         <Form.Group>
             <Form.Label>성별 | Gender *</Form.Label>
-            <Form.Check style={{paddingLeft:"20px"}}
+            <Form.Check style={{paddingLeft:"30px"}}
                 required
                 inline
                 type="radio"
@@ -112,7 +112,7 @@ const Student = (props) => {
         </Form.Group>
         <Form.Group>
             <Form.Label>한국어 능력 | Korean Fluency Level</Form.Label>
-                <Form.Check style={{paddingLeft:"20px"}}
+                <Form.Check style={{paddingLeft:"30px"}}
                     inline
                     type="radio"
                     label="전혀 못함 (Not at all)"
@@ -183,7 +183,7 @@ const Student = (props) => {
 
         <Form.Group id="formGridClass">
         <Form.Label><b>희망하는 수업일 | Day of Class *</b></Form.Label>
-            <Form.Check style={{paddingLeft:"20px"}}
+            <Form.Check style={{paddingLeft:"30px"}}
                 required
                 inline
                 type="radio"
