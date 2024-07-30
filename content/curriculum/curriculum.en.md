@@ -19,36 +19,28 @@ weight: "45"
 
 ### Class Time Schedule
 
-##### Friday Class
+#### Friday Class
 
 * 6:30~7:15pm	1st Period Korean Class 
 * 7:15~7:30pm	Snack Time 
 * 7:30~8:20pm	2nd Period Korean Class
 * 8:20~9:00pm	3rd Period Korean Class 
 
-
-
-##### Saturday Class 
+#### Saturday Class
 
 * 9:30~10:15am	1st Period Korean Class
 * 10:15~10:30am	Snack Time 
 * 10:30~11:20am	2nd Period Korean Class 
 * 11:20~12:00pm    3rd Period Korean Class 
 
-
-
-##### Special Activity Class
+#### Special Activity Class
 
 * Friday class 5:00 ~ 6:00pm
 * Saturday class 12:00 ~ 1:00pm
 
-
-
-##### Speaking Class
+#### Speaking Class
 
 * Every Thursday 7:00 ~ 8:00pm 
-
-
 
 ## Curriculum Information
 
@@ -150,11 +142,9 @@ Beginner Class(Sat.)
 Korean for Overseas Students 3, 4
 {{< /two_column >}}
 
-### St. Andrew Kim Korean School Chamber Orchestra 
+### St. Andrew Kim Korean School Chamber Orchestra
 
 * Recruitment of members: Contact/ Peter Song (Adult class teacher)
-
-
 
 ### 2024-2025 St. Andrew Kim Korean School Academic Schedule
 
