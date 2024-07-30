@@ -4,7 +4,7 @@ date: 2024-02-22T05:58:03.337Z
 description: 교사소개
 weight: 20
 ---
-### **교사소개**
+
 
 #### **교장**
 
@@ -16,7 +16,7 @@ weight: 20
 
 
 
-#### **Teachers**
+## **Teachers**
 
 
 

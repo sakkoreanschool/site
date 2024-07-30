@@ -4,7 +4,7 @@ date: 2024-02-22T05:58:03.337Z
 description: Staff Page
 weight: 20
 ---
-### **Staff**
+
 
 #### **Principal**
 
@@ -16,7 +16,7 @@ Jung Hee Shin	                                       musicthera@gmail.com
 
 
 
-#### **Teachers**
+## **Teachers**
 
 
 
@@ -36,7 +36,7 @@ Jung Hee Shin	                                       musicthera@gmail.com
 
 **Peter Song**	                      Adult                                    Peterisong@gmail.com
 
-**Sophia Sumin Robatzek**	      Kinder(Sat.)	                         ssuminro@gmail.com 
+**Sophia Sumin Robatzek**     Kinder(Sat.)	                         ssuminro@gmail.com 
 
 **Jaemin Sung**	              Basic(Sat.)	                         Jae.Sung2017@gmail.com
 
