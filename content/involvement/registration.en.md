@@ -18,19 +18,19 @@ Only the Conversation class will have an online class.
 
 Available Classes
 
-Friday class: Eight levels - Kindergarten I (student must be 4 years old by 9/13/2024), Kindergarten II, Basic, Beginner Intermediate, intermediate, advanced and Speaking class(Online Only)
+Friday class: Eight levels - Kindergarten I (student must be 4 years old by 9/13/2024), Kindergarten II, Basic, Beginner, intermediate, advanced and Speaking class(Online Only)
 
-Saturday class: Kindergarten, Basic, Beginner Intermediate
+Saturday class: Kindergarten, Basic, Beginner class
 
 Adult Class ($250): Friday 6:30\~8:00pm, Saturday 9:30\~11:00am
 
-Special Activity Class ($230) :  Friday 5:00\~6:00pm, Saturday 12:00\~1:00pm
+Special Activity Class($230) :  Friday 5:00\~6:00pm, Saturday 12:00\~1:00pm
 
 Tuition (this includes material fee):
 
-Current Student: $270 (Except for Adult/Special Activity Class)
+Current Student: $270(Except for Adult/Special Activity Class)
 
-New Student: $270 + $10 (Registration Fee)
+New Student: $270 + $10(Registration Fee)
 
 Sibling Discount: The third and fourth sibling gets $50 off per person.
 
