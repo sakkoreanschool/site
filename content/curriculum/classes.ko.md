@@ -6,29 +6,29 @@ weight: weight 3
 ---
 교과과정 안내
 학급명	            연령	            교실                       교재	
-유치가   Pre-K (Over 4 years old)~ 2nd      104호	           Exciting Korean
+유치가   Pre-K (Over 4 years old)~ 2nd      104호	           신나는 한국어
                                                                                                                                     
-                                                                   Customized Korean 1
+                                                                   맞춤한국어 1
 
-유치나	            K~3rd                   110호	           Customized Korean 2                                                                                           
-                                                          Korean for Overseas Students 1-1
+유치나	            K~3rd                   110호	           맞춤한국어 2                                                                                           
+                                                          재외동포를 위한 한국어 1-1
 
-유치반(토) Pre-K (Over 4 years old)~ 2nd    104호	           Exciting Korean
-                                                                   Customized Korean 1
+유치반(토) Pre-K (Over 4 years old)~ 2nd    104호	           신나는 한국어
+                                                                   맞춤한국어 1
 
-기초1, 2         3rd ~ 5th	            105호	 Korean for Overseas Students 1, 2
+기초1, 2         3rd ~ 5th	            105호	 재외동포를 위한 한국어 1, 2
 
-기초반(토)	 2nd ~ 4th	            105호	 Korean for Overseas Students 1, 2
+기초반(토)	 2nd ~ 4th	            105호	 재외동포를 위한 한국어 1, 2
 
-초급반 	         3rd ~ 5th	            112호	 Korean for Overseas Students 2, 3
+초급반 	         3rd ~ 5th	            112호	 재외동포를 위한 한국어 2, 3
 
 초급반(토)       3rd ~ 6th
 
-중급반	         7th ~ 10th 	            103호	 Korean for Overseas Students 3, 4
+중급반	         7th ~ 10th 	            103호	 재외동포를 위한 한국어 3, 4
 
-고급반	         8th ~ 12th	            106호	 Korean for Overseas Students 5, 6
+고급반	         8th ~ 12th	            106호	 재외동포를 위한 한국어 5, 6
 
-말하기반	 3rd ~ 5th	            zoom	
+말하기반	 3rd ~ 5th	            zoom	 
 
 성인반	           Adult	            111호	
 
