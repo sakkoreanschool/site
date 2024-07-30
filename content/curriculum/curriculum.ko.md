@@ -114,10 +114,12 @@ weight: "45"
 
 
 {{< two_column borders="true" >}}
-학급명
+**학급명**
 <!-- split -->
 **교재**
 {{< /two_column >}}
+
+
 
 
 {{< two_column borders="true" >}}
