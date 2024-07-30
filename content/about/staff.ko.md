@@ -4,19 +4,21 @@ date: 2024-02-22T05:58:03.337Z
 description: 교사소개
 weight: 20
 ---
-**교사소개**
+### **교사소개**
 
-**교장**
+#### **교장**
 
-**박윤기 Fr. 하비에르** 	           yungi1203@gmail.com
+박윤기 Fr. 하비에르 	           yungi1203@gmail.com
 
-**교감**	
+#### **교감**	
 
-**신정희**	                            musicthera@gmail.com
+신정희	                            musicthera@gmail.com
 
-**Teachers**
 
-**담임교사	학급	                              이메일**
+
+#### **Teachers**
+
+
 
 **박화영**	유치가	              cmilk1220@gmail.com
 

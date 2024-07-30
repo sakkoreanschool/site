@@ -4,19 +4,21 @@ date: 2024-02-22T05:58:03.337Z
 description: Staff Page
 weight: 20
 ---
-**Staff**
+### **Staff**
 
-**Principal**
+#### **Principal**
 
-**Rev. Francis Xavier Park Yun Gi** 	               yungi1203@gmail.com
+Rev. Francis Xavier Park Yun Gi 	               yungi1203@gmail.com
 
-**Vice Principal**	
+#### **Vice Principal**	
 
-**Jung Hee Shin**	                                       musicthera@gmail.com
+Jung Hee Shin	                                       musicthera@gmail.com
 
-**Teachers**
 
-**Teacher	                         Class	                                   Email**
+
+#### **Teachers**
+
+
 
 **Hwa Young Park**	              Kinder ga	                         cmilk1220@gmail.com
 
