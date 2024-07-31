@@ -38,7 +38,7 @@ weight: "45"
 * Friday class 6:30 ~ 8:00pm
 * Saturday class 9:30 ~ 11:00am
 
-#### Speaking Class
+#### Speaking Class(Online Class)
 
 * Every Thursday 7:00 ~ 8:00pm 
 
@@ -46,8 +46,6 @@ weight: "45"
 
 * Friday class 5:00 ~ 6:00pm
 * Saturday class 12:00 ~ 1:00pm
-
-
 
 ## Curriculum Information
 
