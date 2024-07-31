@@ -6,7 +6,7 @@ weight: "45"
 ---
 ## Class Information
 
-![](/img/adobestock_132392105_preview.jpeg)
+![](/img/class-information.jpg)
 
 ### 수업 시간표
 
@@ -37,8 +37,6 @@ weight: "45"
 
 * 금요반 5:00 ~ 6:00pm
 * 토요반 12:00 ~ 1:00pm
-
-
 
 ## 교과 과정 안내
 
@@ -155,4 +153,3 @@ weight: "45"
 
 재외동포를 위한 한국어 1, 2, 3
 {{< /two_column >}}
-

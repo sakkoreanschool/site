@@ -6,7 +6,7 @@ weight: "45"
 ---
 ## Class Information
 
-![](/img/adobestock_132392105_preview.jpeg)
+![](/img/class-information.jpg)
 
 
 {{< two_column borders="true" >}}
@@ -155,4 +155,3 @@ Customized Korean 1, 2, 3
 
 Korean for Overseas Students 1, 2, 3
 {{< /two_column >}}
-
