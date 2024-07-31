@@ -18,8 +18,8 @@ weight: 20
 
 | Name                      | Class             | Email                           |
 | ------------------------- | ----------------- | ------------------------------- |
-| **Hwa Young Park**        | Kinder ga         | cmilk1220@gmail.com             |
-| **Kyeongsook jeong**      | Kinder Na         | jeokye02063@student.Edmonds.edu |
+| **Hwa Young Park**        | Kinder Ga(가)      | cmilk1220@gmail.com             |
+| **Kyeongsook jeong**      | Kinder Na(나)      | jeokye02063@student.Edmonds.edu |
 | **Euiri Han**             | Basic             | euirihan@gmail.com              |
 | **Hyunyong Ahn**          | Beginner          | ahy10842@gmail.com              |
 | **Haechang Cho**          | Intermediate      | ys99198@gmail.com               |
