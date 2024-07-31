@@ -1,5 +1,5 @@
 ---
-title: "Monthly event "
+title: " 2024-2025 Teacher and Assistant Teacher Training"
 date: 2024-07-30T19:40:00.000Z
 description: sample
 ---
