@@ -8,11 +8,11 @@ weight: 20
 
 #### **Principal**
 
-|Rev. Francis Xavier Park Yun Gi| 	               yungi1203@gmail.com|
+|Rev. Francis Xavier Park Yun Gi|yungi1203@gmail.com|
 |-|-|
 #### **Vice Principal**	
 
-|Jung Hee Shin|	                                       musicthera@gmail.com|
+|Jung Hee Shin|musicthera@gmail.com|
 |-|-|
 
 

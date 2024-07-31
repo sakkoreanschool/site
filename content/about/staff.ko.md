@@ -6,12 +6,12 @@ weight: 20
 ---
 #### **교장**
 
-|박윤기 Fr. 하비에르| 	           yungi1203@gmail.com|
+|박윤기 Fr. 하비에르|yungi1203@gmail.com|
 |-|-|
 
 #### **교감**
 
-|신정희|	                            musicthera@gmail.com|
+|신정희|musicthera@gmail.com|
 |-|-|
 
 ## **Teachers**
