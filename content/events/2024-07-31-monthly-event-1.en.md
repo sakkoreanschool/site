@@ -7,4 +7,4 @@ description: sample
 
 * Date and Time: Saturday, August 17, 2024, 10:00 AM - 11:00 AM (Assistant Teachers), 11:00 AM - 2:00 PM (Teachers)
 * Location: Room 110, St. Andrew Kim Korean School
-* Topic: New Paradigm for Fostering Next Generation Identity / NAKS-ACTFL Teacher's Certification Program
+* Topic: New Paradigm for Fostering Next Generation Identity
