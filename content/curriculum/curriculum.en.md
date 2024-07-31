@@ -33,14 +33,21 @@ weight: "45"
 * 10:30~11:20am	2nd Period Korean Class 
 * 11:20~12:00pm    3rd Period Korean Class 
 
+#### Adult Class
+
+* Friday class 6:30 ~ 8:00pm
+* Saturday class 9:30 ~ 11:00am
+
+#### Speaking Class
+
+* Every Thursday 7:00 ~ 8:00pm 
+
 #### Special Activity Class
 
 * Friday class 5:00 ~ 6:00pm
 * Saturday class 12:00 ~ 1:00pm
 
-#### Speaking Class
 
-* Every Thursday 7:00 ~ 8:00pm 
 
 ## Curriculum Information
 
@@ -140,6 +147,15 @@ Korean for Overseas Students 1, 2
 Beginner Class(Sat.)
 <!-- split -->
 Korean for Overseas Students 3, 4
+{{< /two_column >}}
+
+
+{{< two_column borders="true" >}}
+Adult Class(Sat.)
+<!-- split -->
+Customized Korean 1, 2, 3
+
+Korean for Overseas Students 1, 2, 3
 {{< /two_column >}}
 
 ### St. Andrew Kim Korean School Chamber Orchestra
