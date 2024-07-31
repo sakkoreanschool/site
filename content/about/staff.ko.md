@@ -4,21 +4,15 @@ date: 2024-02-22T05:58:03.337Z
 description: 교사소개
 weight: 20
 ---
-
-
 #### **교장**
 
 박윤기 Fr. 하비에르 	           yungi1203@gmail.com
 
-#### **교감**	
+#### **교감**
 
 신정희	                            musicthera@gmail.com
 
-
-
 ## **Teachers**
-
-
 
 **박화영**	유치가	              cmilk1220@gmail.com
 
@@ -40,7 +34,7 @@ weight: 20
 
 **성재민**	토 기초반	              Jae.Sung2017@gmail.com
 
-**김조아**	토 초급반	              Aichoara@gmail.com
+**김조아**	토 초급반	              Joaraichoara@gmail.com
 
 **안현용**	SAT Math	              ahy10842@gmail.com
 

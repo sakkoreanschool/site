@@ -34,11 +34,11 @@ Jung Hee Shin	                                       musicthera@gmail.com
 
 **Jaemin Sung**	              Basic(Sat.)	                         Jae.Sung2017@gmail.com
 
-**Joa Kim**	                      Beginner(Sat.)	                 Aichoara@gmail.com
+**Joa Kim**	                      Beginner(Sat.)	                 Joaraichoara@gmail.com
 
 **Hyunyong Ahn**	              SAT Math	                         ahy10842@gmail.com
 
-**Sophia Sumin Robatzek**	      Math	                         ssuminro@gmail.com 
+**Sophia Sumin Robatzek**	      Math	                                 ssuminro@gmail.com 
 
 **Jung Hee Shin**	              Music(Nanta)	                         musicthera@gmail.com
 
@@ -48,7 +48,7 @@ Jung Hee Shin	                                       musicthera@gmail.com
 
 **Euiri Han**	                      Origami class  	                 euirihan@gmail.com
 
-**Peter Song**	                      Chamber Orchestra 	          Peterisong@gmail.com
+**Peter Song**	                      Chamber Orchestra 	                 Peterisong@gmail.com
 
 ![](/img/교사사진.jpg)
 
