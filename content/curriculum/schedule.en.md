@@ -5,3 +5,7 @@ description: Academic schedule
 weight: "100"
 ---
 .
+
+![](/img/영문-학사일정1.png)
+
+![](/img/영문-학사일정2.png)
