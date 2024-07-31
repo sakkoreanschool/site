@@ -11,8 +11,8 @@ weight: 20
 
 #### **Vice Principal**
 
-| Jung Hee Shin | musicthera@gmail.com |
-| ------------- | -------------------- |
+| Jung Hee Shin                     | musicthera@gmail.com |
+| --------------------------------- | -------------------- |
 
 ## **Teachers**
 
