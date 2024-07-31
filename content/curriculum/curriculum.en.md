@@ -6,7 +6,7 @@ weight: "45"
 ---
 ## Class Information
 
-![](/img/class-information.jpg)
+![](/img/수업사진.png)
 
 
 {{< two_column borders="true" >}}
