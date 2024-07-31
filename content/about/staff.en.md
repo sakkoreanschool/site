@@ -4,15 +4,21 @@ date: 2024-02-22T05:58:03.337Z
 description: Staff Page
 weight: 20
 ---
+
+
 #### **Principal**
 
 Rev. Francis Xavier Park Yun Gi 	               yungi1203@gmail.com
 
-#### **Vice Principal**
+#### **Vice Principal**	
 
 Jung Hee Shin	                                       musicthera@gmail.com
 
+
+
 ## **Teachers**
+
+
 
 **Hwa Young Park**	              Kinder ga	                         cmilk1220@gmail.com
 
@@ -34,7 +40,7 @@ Jung Hee Shin	                                       musicthera@gmail.com
 
 **Jaemin Sung**	              Basic(Sat.)	                         Jae.Sung2017@gmail.com
 
-**Joa Kim**	                      Beginner(Sat.)	                 Joaraichoara@gmail.com
+**Joa Kim**	                      Beginner(Sat.)	                 Aichoara@gmail.com
 
 **Hyunyong Ahn**	              SAT Math	                         ahy10842@gmail.com
 
