@@ -4,7 +4,7 @@ date: 2024-02-22T05:58:03.337Z
 description: Greeting Section
 weight: 10
 ---
-![](/img/한국학교1.jpeg)
+![](/img/동요대회-사진.jpg)
 
 Welcome to the website of St. Andrew Kim Korean School. The educational goal of St. Andrew Kim Korean School, which has been established and operated by St. Andrew Kim Parish under the Archdiocese of Seattle for over 30 years, is to nurture individuals who emulate God and practice truth, love, faith, and hope in society. Furthermore, we aim to cultivate future talents with sound intellectual abilities, upright character, and moral integrity. 
 
