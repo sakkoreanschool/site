@@ -156,12 +156,3 @@ Customized Korean 1, 2, 3
 Korean for Overseas Students 1, 2, 3
 {{< /two_column >}}
 
-### St. Andrew Kim Korean School Chamber Orchestra
-
-* Recruitment of members: Contact/ Peter Song (Adult class teacher)
-
-### 2024-2025 St. Andrew Kim Korean School Academic Schedule
-
-![](/img/영문-학사일정1.png)
-
-![](/img/영문-학사일정2.png)
