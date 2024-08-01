@@ -8,8 +8,8 @@ weight: weight 6
 
 ### Working hours
 
-* Fridays from 6:30 PM to 9:00 PM.
-* Saturdays from 9:30 AM to 12:00 PM.
+* Fridays from 6:00 PM to 9:00 PM.
+* Saturdays from 9:00 AM to 12:00 PM.
 
 ### School address
 
