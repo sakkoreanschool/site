@@ -24,7 +24,7 @@ Saturday class: Kindergarten, Basic, Beginner class
 
 Adult Class ($250): Friday 6:30\~8:00pm, Saturday 9:30\~11:00am
 
-Special Activity Class($230) :  Friday 5:00\~6:00pm, Saturday 12:00\~1:00pm
+Enrichment Class($230) :  Friday 5:00\~6:00pm, Saturday 12:00\~1:00pm
 
 Tuition (this includes material fee):
 
