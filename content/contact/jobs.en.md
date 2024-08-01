@@ -32,6 +32,6 @@ Submit your resume and cover letter to sakks10@gmail.com , followed by an interv
 
 For further inquiries, please contact sakks10@gmail.com 
 
-![](/img/성-김대건-한국학교-교사모집-포스터.png)
+![](/img/교사-및-보조교사-모집광고-포스터.png)
 
 ![]()
