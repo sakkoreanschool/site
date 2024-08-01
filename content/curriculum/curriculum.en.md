@@ -42,7 +42,7 @@ weight: "45"
 
 * Every Thursday 7:00 ~ 8:00pm 
 
-#### Special Activity Class
+#### Enrichment Class
 
 * Friday class 5:00 ~ 6:00pm
 * Saturday class 12:00 ~ 1:00pm
