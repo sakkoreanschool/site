@@ -1,7 +1,7 @@
 ---
 title: Teacher and Teacher Assistant Recruitment
 date: 2024-08-01T00:01:00.000Z
-description: 교사 및 보조교사 모집 광고
+description: 교사 모집 광고
 ---
 "At St. Andrew Kim Korean School, we are recruiting Korean language teachers."
 
