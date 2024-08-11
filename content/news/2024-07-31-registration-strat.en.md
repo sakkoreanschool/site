@@ -1,5 +1,5 @@
 ---
-title: Registration Strat!
+title: Registration Start!
 date: 2024-07-31T00:03:00.000Z
 description: "New notice! "
 ---
