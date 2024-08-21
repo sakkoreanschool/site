@@ -4,6 +4,56 @@ date: 2024-02-22T05:58:03.337Z
 description: Registration for 1st semester begins
 weight: "1"
 ---
+<head>
+
+<style>
+
+ .button {
+
+\    color: white;
+
+\    border: none;
+
+\    cursor: pointer;
+
+\    font-weight: bold;
+
+\    font-size: 18px;
+
+\    font-family: Arial, Helvetica, sans-serif;
+
+\    margin-right: 10px;
+
+\    padding: 12px 18px;
+
+\    border-radius: 4px;
+
+\    }
+
+.button5 {
+
+\    background: linear-gradient(to right, orange, red);
+
+\    transform: all 0.3s ease;
+
+}
+
+
+
+.button5:hover {
+
+\    background: linear-gradient(to right, red, orange);
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<button class = button button5 onClick="/registration_pages/register">New Student Registration</button>
+
 <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-8" href="/registration_pages/register">New Student Registration</a>
 
 <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="/registration_pages/reregister">Returning Student Registration</a>
@@ -37,3 +87,5 @@ Sibling Discount: The third and fourth sibling gets $50 off per person.
 \*\*We do not accept card. Checks/Cash only.
 
 ♦ Contact Us: sakks10@gmail.com
+
+</body>
