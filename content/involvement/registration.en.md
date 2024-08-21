@@ -52,7 +52,7 @@ weight: "1"
 
 <body>
 
-<button class = button button5 onClick="/registration_pages/register">New Student Registration</button>
+<button class = "button button5" onClick="/registration_pages/register">New Student Registration</button>
 
 <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded my-8" href="/registration_pages/register">New Student Registration</a>
 
