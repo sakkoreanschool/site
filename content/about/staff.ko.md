@@ -28,7 +28,7 @@ weight: 20
 | **송인성** | 성인반       | Peterisong@gmail.com            |
 | **노수민** | 토 유치반     | ssuminro@gmail.com              |
 | **성재민** | 토 기초반     | Jae.Sung2017@gmail.com          |
-| **김조아** | 토 초급반     | joa@sakkoreanschool.org         |
+| **김조아** | 토 초급반     | info@sakkoreanschool.org        |
 | **안현용** | SAT Math  | ahy10842@gmail.com              |
 | **노수민** | 수학반       | ssuminro@gmail.com              |
 | **신정희** | 음악반(난타)   | musicthera@gmail.com            |

@@ -28,7 +28,7 @@ weight: 20
 | **Peter Song**            | Adult             | Peterisong@gmail.com            |
 | **Sophia Sumin Robatzek** | Kinder(Sat.)      | ssuminro@gmail.com              |
 | **Jaemin Sung**           | Basic(Sat.)       | Jae.Sung2017@gmail.com          |
-| **Joa Kim**               | Beginner(Sat.)    | joa@sakkoreanschool.org         |
+| **Joa Kim**               | Beginner(Sat.)    | info@sakkoreanschool.org        |
 | **Hyunyong Ahn**          | SAT Math          | ahy10842@gmail.com              |
 | **Sophia Sumin Robatzek** | Math              | ssuminro@gmail.com              |
 | **Jung Hee Shin**         | Music(Nanta)      | musicthera@gmail.com            |
