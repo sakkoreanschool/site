@@ -8,11 +8,11 @@ weight: "1"
 
 <a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="/registration_pages/reregister">Returning Student Registration</a>
 
-2024-2025 1st Semester
+2024-2025 2nd Semester
 
-♦ 1st Semester period: Sep 13th \~ Jan 24th(2025)(16 weeks, Friday Class), Sep 14th \~Jan 25th(2025) (Saturday Class)
+♦ 1st Semester period: Feb 7th \~ May 31st(2025)(16 weeks, Friday Class), Feb 8th \~May 31st(2025) (Saturday Class)
 
-♦ Korean school starts: Sep 13th Friday, 14th Saturday
+♦ Korean school starts: Feb 7th Friday, Feb 8th Saturday
 
 Only the Conversation class will have an online class.
 
