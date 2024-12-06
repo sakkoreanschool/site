@@ -1,5 +1,5 @@
 ---
-title: 2024 Autumn Session Registration
+title: 2025 Spring Session Registration
 date: 2024-02-22T05:58:03.337Z
 description: English language registration page
 ---
